@@ -2,7 +2,7 @@ import React from 'react'
 import ImageSlider from '../Components/ImageSlider'
 import PrincipalHome from '../Components/PrincipalHome'
 import "./Schoolsection1.css"
-const Schoolsection1 = () => {
+const Section1name = () => {
   return (
      <div className='schoolsection1'>
         <div className='mgsaname'> <h1>MAHATMA GANDHI SCIENCE ACADEMY</h1>
@@ -23,4 +23,4 @@ const Schoolsection1 = () => {
   )
 }
 
-export default Schoolsection1
+export default Section1name;

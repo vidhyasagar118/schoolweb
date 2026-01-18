@@ -1,7 +1,7 @@
 import React from 'react'
 import Abouthome from './Abouthome'
 import Galleryhome from './Galleryhome'
-import Schoolsection1 from '../Sections/Schoolsection1'
+import Section1name from '../Sections/Section1name'
 import Section2Acad from '../Sections/Section2Acad'
 import Section3faci from '../Sections/Section3faci'
 import Motivationalquote1 from '../Components/Motivationalquote1'
@@ -10,7 +10,7 @@ import Contacthome from './Contacthome'
 const Home = () => {
   return (
     <>
-<Schoolsection1/>
+    <Section1name/>
 <Section2Acad /> 
 <Section3faci />
 <Motivationalquote1 />
