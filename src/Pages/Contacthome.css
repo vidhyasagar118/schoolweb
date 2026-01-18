@@ -1,0 +1,40 @@
+.Contacthomeh1 {
+    color: cornflowerblue;
+    text-align: center;
+}
+.Contacthome{
+    height: 50vh;
+    margin-top: 50px;
+    box-shadow: 5px 2px 5px lightblue;
+    padding: 20px;
+}
+.Contacthomeh2 {
+    text-align: center;
+}
+
+.Contactlidiv ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+
+@media screen and (max-width: 600px) {
+    .Contactlidiv ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .Contactlidiv ul li {
+        text-align: center;
+    }
+}
+.contactmorebtn{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}

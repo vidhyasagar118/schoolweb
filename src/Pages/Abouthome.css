@@ -1,0 +1,24 @@
+.homeaboutsectionh1{
+    text-align: center;
+    color: lightcoral;
+}
+.divaboutbtn{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.abouthomediv{
+    font-size: 20px;
+    margin-top: 40px;
+    /* z-index: 1; */
+    box-shadow: 2px 5px 10px lightskyblue;
+    border-radius: 10px;
+    word-spacing: 5px;
+}
+.aboutbtn{
+    padding: 10px 20px ;
+    color:white;
+    border: none;
+    background-color: red;
+}

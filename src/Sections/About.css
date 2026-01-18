@@ -1,0 +1,86 @@
+.aboutpagemaindiv {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 30px 40px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #e0e0e0; 
+  line-height: 1.7;
+  background-color: #121212; /* Dark background */
+  border: 1.5px solid #333; /* Dark border */
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.85);
+  transition: box-shadow 0.3s ease;
+}
+
+.aboutpagemaindiv:hover {
+  box-shadow: 0 15px 40px rgba(0, 123, 255, 0.7);
+}
+
+.aboutpagemaindiv h1 {
+  text-align: center;
+  color: #0d6efd;
+  margin-bottom: 50px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(13, 110, 253, 0.8);
+}
+
+.aboutpagemaindiv h2 {
+  color: #0dcaf0; 
+  margin-top: 35px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  border-bottom: 2px solid #0dcaf0;
+  padding-bottom: 5px;
+}
+
+.aboutpagemaindiv h3 {
+  color: #20c997; 
+  margin-top: 25px;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.aboutpagemaindiv p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #cfd8dc; 
+}
+
+.aboutpagemaindiv ul {
+  list-style-type: disc;
+  margin-left: 30px;
+  margin-bottom: 25px;
+  color: #b2becd;
+}
+
+.aboutpagemaindiv ul li {
+  margin-bottom: 12px;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .aboutpagemaindiv {
+    padding: 20px 15px;
+    margin: 30px 15px;
+  }
+
+  .aboutpagemaindiv h1 {
+    font-size: 28px;
+  }
+
+  .aboutpagemaindiv h2 {
+    font-size: 22px;
+  }
+
+  .aboutpagemaindiv h3 {
+    font-size: 18px;
+  }
+
+  .aboutpagemaindiv p,
+.aboutpagemaindiv ul li {
+    font-size: 15px;
+  }
+}

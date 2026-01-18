@@ -1,0 +1,35 @@
+.mgsaname{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10vh;
+}
+       .mainnotibox {
+  margin-top: 20px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  z-index: 50;
+  box-shadow: 0 2px 8px lightblue;
+  padding: 10px 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.notification {
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  display: inline-block;
+  border-radius: 4px;
+  font-weight: bold;
+  white-space: nowrap;
+  font-weight: 1000;
+}
+
+marquee {
+  flex-grow: 1;
+  font-size: 16px;
+  color: #333;
+}

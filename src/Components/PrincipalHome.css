@@ -1,0 +1,130 @@
+.PrincipalHome {
+    display: flex;
+    margin-top: 12vh; /* navbar ke niche safe spacing */
+    gap: 30px;
+    padding: 30px;
+    margin-left: 5vw;
+    background: linear-gradient(135deg, #f8f9fa, #eef6ff);
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+    position: relative;
+}
+.prib{
+    color: red;
+    font-size: 32px;
+}
+
+.principalphoto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32%;
+    height: 50vh;
+    background: linear-gradient(135deg, #0072ff, #00c6ff);
+    border-radius: 14px;
+    box-shadow: inset 0 0 0 3px rgba(255, 255, 255, 0.4),
+                0 8px 20px rgba(0, 0, 0, 0.25);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.principalphoto:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+.principalphoto img {
+    height: 40vh;
+    width: auto;
+    border-radius: 12px;
+    border: 4px solid white;
+    object-fit: cover;
+}
+
+/* Content Section */
+.principalcontent {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 10px 20px;
+    color: #2d3436;
+}
+
+.principalcontent h4 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    color: #0072ff;
+}
+
+.principalcontent span {
+    font-size: 18px;
+    font-weight: 600;
+    color: #0984e3;
+    margin-bottom: 15px;
+}
+
+.principalcontent p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #444;
+}
+
+@media (max-width: 600px) {
+    .PrincipalHome {
+        flex-direction: row;
+        padding: 15px;
+        margin-left: 0;
+        margin-top: 0vh;
+    }
+
+    .principalphoto {
+        width: 30%;
+        height: 30vh;
+    }
+
+    .principalphoto img {
+        width: 100%;
+        height: 28vh;
+    }
+
+    .principalcontent {
+        width: 50%;
+        padding: 5px 10px;
+    }
+
+    .principalcontent h4 {
+        font-size: 12px;
+    }
+
+    .principalcontent span {
+        font-size: 14px;
+    }
+
+    .principalcontent p {
+        font-size: 10px;
+    }
+    .prib{
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .PrincipalHome {
+        flex-direction: column;
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .principalphoto,
+    .principalcontent {
+        width: 100%;
+    }
+
+    .principalphoto {
+        height: 45vh;
+    }
+
+    .principalphoto img {
+        height: 40vh;
+    }
+}
