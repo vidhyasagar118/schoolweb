@@ -48,19 +48,17 @@ const Signup = () => {
     }
   };
 
-  // Verify OTP → go to login page (Flipkart style)
   const handleVerifyOtp = async (e) => {
     e.preventDefault();
     try {
       const res = await axios.post(`${API}/verify-otp`, { email, otp });
       alert(res.data.message);
-      navigate("/login"); // ✅ redirect to login page
+      navigate("/login"); 
     } catch (err) {
       alert(err.response?.data?.message || "OTP verification failed");
     }
   };
 
-  // Google signup
   const handleGoogleSignup = () => {
     window.location.href = "http://localhost:5000/api/auth/google";
   };

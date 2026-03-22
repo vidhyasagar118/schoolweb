@@ -9,6 +9,7 @@ import About from './Sections/About'
 import GoogleSuccess from './Pages/Login/GoogleSuccess'
 import Contact from './Sections/Contact'
 import Login from './Pages/Login/Login'
+import Footer from './Pages/Footer'
 function App() {
   return (
     <>
@@ -27,7 +28,7 @@ function App() {
 <Route path="/aboutpage" element={<About />} />
 
       </Routes>
-
+<Footer />
     </>
   )
 }

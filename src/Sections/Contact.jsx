@@ -66,9 +66,10 @@ const Contact = () => {
         <address>
           <strong>Address:</strong>
           <br />
-          ABC Public School, Main Road, Near Bus Stand,
+          meera market chittorgarh
+
           <br />
-          City Name, District, State – PIN Code
+          chittorgarh rajsthan State 812021
         </address>
 
         <p>🗺️ Find us easily on Google Maps and visit our campus anytime.</p>
