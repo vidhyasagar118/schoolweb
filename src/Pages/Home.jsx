@@ -7,7 +7,7 @@ import Section3faci from '../Sections/Section3faci'
 import Motivationalquote1 from '../Components/Motivationalquote1'
 import "./Home.css"
 import Contacthome from './Contacthome'
-import Atendencesheet from './Ateendence/Atendencesheet'
+// import Atendencesheet from './Ateendence/Atendencesheet'
 const Home = () => {
   return (
     <>
@@ -18,7 +18,7 @@ const Home = () => {
       <Galleryhome />
       <Abouthome />
             <Contacthome />
-            <Atendencesheet />
+            {/* <Atendencesheet /> */}
   
     </>
   )
