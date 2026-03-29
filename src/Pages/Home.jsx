@@ -5,6 +5,7 @@ import Section1name from '../Sections/Section1name'
 import Section2Acad from '../Sections/Section2Acad'
 import Section3faci from '../Sections/Section3faci'
 import Motivationalquote1 from '../Components/Motivationalquote1'
+import Footer from './Footer'
 import "./Home.css"
 import Contacthome from './Contacthome'
 // import Atendencesheet from './Ateendence/Atendencesheet'
@@ -19,7 +20,6 @@ const Home = () => {
       <Abouthome />
             <Contacthome />
             {/* <Atendencesheet /> */}
-  
     </>
   )
 }

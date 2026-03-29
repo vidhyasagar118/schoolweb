@@ -16,7 +16,7 @@ const nevigate=useNavigate();
 
             </div></li>
               <li  className='schoolname navbarli'>MGS Academy</li>
-            <li className="navbarli" onClick={()=>{nevigate("/signup")}}><button>Login</button></li>
+            <li className="navbarli" onClick={()=>{nevigate("/login")}}><button>Login</button></li>
         </ul>
     </div>
           <Mainnavbar isVisible={showMenu} onClose={() => setShowMenu(false)} />

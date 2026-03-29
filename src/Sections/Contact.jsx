@@ -1,53 +1,31 @@
 import React, { useState } from "react";
 import "./Contact.css";
+import axios from "axios";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
+  
+ const [formData, setFormData] = useState({
     name: "",
-    phone: "",
     email: "",
+    phone: "",
     message: "",
   });
 
-  const [loading, setLoading] = useState(false);
+  const [msg, setMsg] = useState("");
 
   const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setLoading(true);
 
     try {
-      const response = await fetch("http://localhost:5000/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-
-      const data = await response.json();
-
-      if (response.ok) {
-        alert("✅ Message sent successfully!");
-        setFormData({
-          name: "",
-          phone: "",
-          email: "",
-          message: "",
-        });
-      } else {
-        alert(data.message || "❌ Failed to send message");
-      }
-    } catch (error) {
-      alert("❌ Server error. Try again later.");
-    } finally {
-      setLoading(false);
+      const res = await axios.post("http://localhost:5000/api/contact", formData);
+      setMsg(res.data.message);
+      setFormData({ name: "", email: "", phone: "", message: "" });
+    } catch (err) {
+      setMsg("Something went wrong ❌");
     }
   };
 
@@ -85,56 +63,53 @@ const Contact = () => {
           <li>🕘 Office Hours: Mon – Sat | 9:00 AM – 4:00 PM</li>
         </ul>
       </div>
+    <div className="contact-container">
+      <h1>Contact Us</h1>
+      <p>Fill the form below to contact us</p>
 
-      {/* Contact Form */}
-      <div className="contact-form">
-        <h3>📝 Send Us a Message</h3>
-        <p>Have any questions? Fill out the form below.</p>
+      <form onSubmit={handleSubmit}>
+        <input
+          type="text"
+          name="name"
+          placeholder="Your name"
+          value={formData.name}
+          onChange={handleChange}
+          required
+        />
 
-        <form onSubmit={handleSubmit}>
-          <input
-            type="text"
-            name="name"
-            placeholder="Full Name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-          />
+        <input
+          type="email"
+          name="email"
+          placeholder="Your email"
+          value={formData.email}
+          onChange={handleChange}
+          required
+        />
 
-          <input
-            type="tel"
-            name="phone"
-            placeholder="Mobile Number"
-            value={formData.phone}
-            onChange={handleChange}
-            required
-          />
+        <input
+          type="tel"
+          name="phone"
+          placeholder="Mobile number"
+          value={formData.phone}
+          onChange={handleChange}
+          required
+        />
 
-          <input
-            type="email"
-            name="email"
-            placeholder="Email Address"
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
+        <textarea
+          name="message"
+          placeholder="Your message (optional)"
+          value={formData.message}
+          onChange={handleChange}
+        />
 
-          <textarea
-            name="message"
-            placeholder="Message"
-            rows="4"
-            value={formData.message}
-            onChange={handleChange}
-            required
-          ></textarea>
+        <button type="submit">Submit</button>
+      </form>
 
-          <button type="submit" disabled={loading}>
-            {loading ? "Sending..." : "Submit"}
-          </button>
-        </form>
+      <p className="msg">{msg}</p>
+    </div>
+    
 
-        <p className="response-time">👉 We usually respond within 24 hours.</p>
-      </div>
+
     </section>
   );
 };
