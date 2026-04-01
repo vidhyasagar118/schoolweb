@@ -33,7 +33,7 @@ const FileUpload = () => {
         <div key={f._id}>
           <span>{f.filename}</span>
           <a
-            href={`http://localhost:5000/${f.filepath}`}
+href={`http://localhost:5000/uploads/${f.filename}`}
             target="_blank"
             rel="noreferrer"
           >
