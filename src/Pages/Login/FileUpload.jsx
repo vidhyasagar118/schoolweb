@@ -4,18 +4,18 @@ const FileUpload = () => {
   const [file, setFile] = useState(null);
   const [files, setFiles] = useState([]);
 
-  const handleUpload = async () => {
-    const formData = new FormData();
-    formData.append("file", file);
+ const handleUpload = async () => {
+  const formData = new FormData();
+  formData.append("file", file);
 
-    await API.post("/upload", formData);
-    fetchFiles();
-  };
+  await API.post("/api/upload", formData);
+  fetchFiles();
+};
 
-  const fetchFiles = async () => {
-    const res = await API.get("/files");
-    setFiles(res.data);
-  };
+const fetchFiles = async () => {
+  const res = await API.get("/api/files");
+  setFiles(res.data);
+};
 
   useEffect(() => {
     fetchFiles();
@@ -33,8 +33,8 @@ const FileUpload = () => {
         <div key={f._id}>
           <span>{f.filename}</span>
           <a
-href={`http://localhost:5000/uploads/${f.filename}`}
-            target="_blank"
+            // ✅ sahi
+            href={`https://schoolprobackend.onrender.com/uploads/${f.filename}`} target="_blank"
             rel="noreferrer"
           >
             <button>Open</button>

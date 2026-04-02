@@ -22,8 +22,10 @@ const Contacthome = () => {
     e.preventDefault();
 
     try {
-      const res = await axios.post("http://localhost:5000/api/contact", formData);
-      setMsg(res.data.message);
+const res = await axios.post(
+  "https://schoolprobackend.onrender.com/api/contact",
+  formData
+);      setMsg(res.data.message);
       setFormData({ name: "", email: "", phone: "", message: "" });
     } catch (err) {
       setMsg("Something went wrong ❌");

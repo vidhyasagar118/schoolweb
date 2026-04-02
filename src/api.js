@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://schoolprobackend.vercel.app/",
+  baseURL: "https://schoolprobackend.onrender.com/",
 });
 
 export default API;
