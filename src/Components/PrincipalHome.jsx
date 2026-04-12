@@ -9,7 +9,7 @@ const PrincipalHome = () => {
           <img src="https://iitb.irins.org/profile_images/52006_Arti_D_Kalro.jpg" alt="photo" />
             </div>
           <div className='principalcontent'>
-                             <h4><b className='prib'>Principal:</b>  Abhishekh kushwaha</h4>
+                             <h4><b className='prib'>Principal:</b>  rashmi kumari</h4>
 
             <span>“शिक्षा वह शस्त्र है जिससे आप दुनिया बदल सकते हैं।” </span>
             <p>
