@@ -1,0 +1,111 @@
+/* Background */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #f4f6f9;
+  margin: 0;
+}
+
+/* Main container */
+.attendance-container {
+  max-width: 1000px;
+  margin: 30px auto;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+/* Heading */
+.attendance-title {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.btn-primary {
+  background: #3498db;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #2980b9;
+}
+
+.btn-secondary {
+  background: #2ecc71;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background: #27ae60;
+}
+
+.btn-back {
+  background: #e74c3c;
+  color: white;
+}
+
+/* Table */
+.attendance-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.attendance-table th {
+  background: #34495e;
+  color: white;
+  padding: 12px;
+}
+
+.attendance-table td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.attendance-table tr:hover {
+  background: #f1f7ff;
+}
+
+/* Select dropdown */
+select {
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+/* Message */
+.message {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+/* History cards */
+.history-card {
+  background: #fdfdfd;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.history-date {
+  font-weight: bold;
+  color: #34495e;
+}

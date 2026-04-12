@@ -8,7 +8,7 @@ import Motivationalquote1 from '../Components/Motivationalquote1'
 import Footer from './Footer'
 import "./Home.css"
 import Contacthome from './Contacthome'
-// import Atendencesheet from './Ateendence/Atendencesheet'
+import Topperdisplay from '../Toppers/Topperdisplay'
 const Home = () => {
   return (
     <>
@@ -19,7 +19,7 @@ const Home = () => {
       <Galleryhome />
       <Abouthome />
             <Contacthome />
-            {/* <Atendencesheet /> */}
+            <Topperdisplay />
     </>
   )
 }
